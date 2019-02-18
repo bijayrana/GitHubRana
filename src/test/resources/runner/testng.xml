@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page factories">
+<listeners>
+
+		<listener class-name="iF.listeners.CustomListeners" />
+
+		<listener class-name="iF.errorcollectors.TestListenerAdapter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+
+	</listeners>
+
+  <test thread-count="5" name="Sign In Test">
+    <classes>
+      <class name="iF.testcases.SignInTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
